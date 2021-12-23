@@ -1,0 +1,13 @@
+{
+  "name": "TierHacker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*.tiermaker.com/*"],
+      "js": ["content.js"],
+      "css": ["tierhacker.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
