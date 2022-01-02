@@ -9,5 +9,10 @@
       "css": ["tierhacker.css"],
       "run_at": "document_end"
     }
-  ]
+  ],
+  "icons": {
+    "16": "Tierhacker_16.png",
+    "48": "Tierhacker_48.png",
+    "128": "Tierhacker_128.png"
+  }
 }
