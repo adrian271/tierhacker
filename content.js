@@ -2,16 +2,16 @@ let { pathname } = window.location;
 let page = "th-" + pathname.replace(/create/gi, "").replace(/\//gi, "");
 
 let addImg = () => {
-  let img = prompt("Please enter an image url"),
-    lastImg = document.querySelector(
-      "#create-image-carousel .character:last-of-type"
-    ),
-    newItem = lastImg.cloneNode(),
-    newId = "th" + new Date().getTime().toString();
-  newItem.setAttribute("id", newId);
-  newItem.setAttribute("style", `background-image: url("${img}")`);
-  registerCustomImage(newId, img);
-  lastImg.parentNode.append(newItem);
+  let img = prompt("Please enter an image url");
+  if (img) {
+    let lastImg = document.querySelector(".character"),
+      newItem = lastImg.cloneNode(),
+      newId = "th" + new Date().getTime().toString();
+    newItem.setAttribute("id", newId);
+    newItem.setAttribute("style", `background-image: url("${img}")`);
+    registerCustomImage(newId, img);
+    document.querySelector("#create-image-carousel").append(newItem);
+  }
 };
 
 let init = () => {

@@ -11,3 +11,10 @@ Questions? Email tierhackerapp at gmail dot com
 - Extract the files out of the zip, you do not need to open anything
 - Go to your Google Chrome Browser (although other browsers should support this extension), find your Extensions section of your browser, enable `Developer mode` and click `Load unpacked` and find the folder you just extracted out.
 - Find a Tiermaker page you wish to modify, if you're already on a Tiermaker page then you will need to refresh the page
+
+## Future Improvements
+
+- Add functionality to remove items, potentially ones that came with the tiermaker list
+- Currently when you add an item, if it's not placed in a tier it can be lost if the browser is refreshed
+- Ability to reset entire Tiermaker
+- User a input instead of a browser prompt to add items
