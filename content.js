@@ -1,3 +1,6 @@
+let { pathname } = window.location;
+let page = "th-" + pathname.replace(/create/gi, "").replace(/\//gi, "");
+
 let addImg = () => {
   let img = prompt("Please enter an image url"),
     lastImg = document.querySelector(
@@ -21,14 +24,14 @@ let init = () => {
 };
 
 let registerCustomImage = (id, imgStr) => {
-  let localData = localStorage.tierhacker || "{}";
+  let localData = localStorage.getItem(page) || "{}";
   let obj = JSON.parse(localData);
   obj[id] = imgStr;
-  localStorage.setItem("tierhacker", JSON.stringify(obj));
+  localStorage.setItem(page, JSON.stringify(obj));
 };
 
 let restoreCustomImages = () => {
-  let imgData = localStorage.getItem("tierhacker") || "";
+  let imgData = localStorage.getItem(page) || "";
   if (imgData) {
     let obj = JSON.parse(imgData);
     for (item in obj) {
