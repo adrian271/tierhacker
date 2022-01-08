@@ -17,4 +17,4 @@ Questions? Email tierhackerapp at gmail dot com
 - Add functionality to remove items, potentially ones that came with the tiermaker list
 - Currently when you add an item, if it's not placed in a tier it can be lost if the browser is refreshed
 - Ability to reset entire Tiermaker
-- User a input instead of a browser prompt to add items
+- Use a form input instead of a browser prompt to add items
