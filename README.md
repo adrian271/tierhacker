@@ -19,3 +19,4 @@ Questions? Email tierhackerapp at gmail dot com
 - Ability to reset entire Tiermaker
 - Use a form input instead of a browser prompt to add items
 - Add history that you can move forward and back through, undo and redo (with keybindings).
+- A Tierhacker Twitch Bot or create an integration with existing bots
