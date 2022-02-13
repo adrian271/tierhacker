@@ -1,8 +1,16 @@
+#tierhacker-container {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
 #tierhacker-btn {
   text-align: center;
   background: #ff7348;
   background-size: 10px;
-  margin: 2rem auto;
+  margin: 16px;
   display: block;
   color: #fff;
   text-shadow: 0px 0px 4px #000;
@@ -15,6 +23,10 @@
 #tierhacker-btn:before {
   content: "+";
   margin-right: 4px;
+}
+
+#tierhacker-input {
+  width: 250px;
 }
 
 @keyframes gradient {
