@@ -1,25 +1,36 @@
 #tierhacker-container {
   margin: 2rem auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  background: #eee;
+  max-width: 360px;
+  padding: 2rem;
+  border-radius: 8px;
 }
 
 #tierhacker-btn {
   text-align: center;
   background: #ff7348;
   background-size: 10px;
-  margin: 16px;
+  margin: 16px 0;
   display: block;
   color: #fff;
   text-shadow: 0px 0px 4px #000;
 }
+
 #tierhacker-btn:hover {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: rainbow 1s ease infinite;
 }
+
+#tierhacker-btn:disabled {
+  opacity: 0.5;
+  background: gray !important;
+  animation: none !important;
+}
+
 #tierhacker-btn:before {
   content: "+";
   margin-right: 4px;
@@ -30,6 +41,25 @@
   box-sizing: border-box;
   padding: 8px 16px;
   font-family: monospace;
+}
+
+#image-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: rgb(26, 26, 23);
+}
+
+#image-preview:after {
+  content: "?";
+  font-size: 64px;
+}
+#image-preview.filled:after {
+  content: "";
 }
 
 @keyframes gradient {
