@@ -27,7 +27,7 @@ let init = () => {
   let input = document.createElement("input");
   input.setAttribute("id", "tierhacker-input");
   input.setAttribute("type", "text");
-  input.setAttribute("placeholder", "Paste your image here");
+  input.setAttribute("placeholder", "Add image to your list");
   document.querySelector("#tierhacker-container").append(btn);
   document.querySelector("#tierhacker-container").prepend(input);
   restoreCustomImages();

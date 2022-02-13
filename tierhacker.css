@@ -26,7 +26,10 @@
 }
 
 #tierhacker-input {
-  width: 250px;
+  width: 245px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  font-family: monospace;
 }
 
 @keyframes gradient {

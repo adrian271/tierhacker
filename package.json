@@ -1,0 +1,20 @@
+{
+  "name": "tierhacker",
+  "version": "0.0.1",
+  "description": "This plugin has no affiliation with Tiermaker or tiermaker.com",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": ". ./build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian271/tierhacker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrian271/tierhacker/issues"
+  },
+  "homepage": "https://github.com/adrian271/tierhacker#readme"
+}
