@@ -17,6 +17,6 @@ Questions? Email tierhackerapp at gmail dot com
 - Add functionality to remove items, potentially ones that came with the tiermaker list
 - Currently when you add an item, if it's not placed in a tier it can be lost if the browser is refreshed
 - Ability to reset entire Tiermaker
-- Use a form input instead of a browser prompt to add items
+- ~~Use a form input instead of a browser prompt to add items~~
 - Add history that you can move forward and back through, undo and redo (with keybindings).
 - A Tierhacker Twitch Bot or create an integration with existing bots

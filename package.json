@@ -1,6 +1,6 @@
 {
   "name": "tierhacker",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "This plugin has no affiliation with Tiermaker or tiermaker.com",
   "main": "content.js",
   "scripts": {

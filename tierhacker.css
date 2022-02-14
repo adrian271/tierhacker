@@ -52,6 +52,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgb(26, 26, 23);
+  background-size: cover;
 }
 
 #image-preview:after {
