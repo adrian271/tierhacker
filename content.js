@@ -1,6 +1,19 @@
 let { pathname } = window.location;
 let page = "th-" + pathname.replace(/create/gi, "").replace(/\//gi, "");
 
+let imageConverter = (img) =>
+  fetch(img)
+    .then((response) => response.blob())
+    .then(
+      (blob) =>
+        new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onloadend = () => resolve(reader.result);
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
+        })
+    );
+
 let addImg = (ev) => {
   ev.preventDefault();
   let input = document.querySelector("#tierhacker-input");
@@ -10,11 +23,17 @@ let addImg = (ev) => {
       newItem = lastImg.cloneNode(),
       newId = "th" + new Date().getTime().toString();
     newItem.setAttribute("id", newId);
-    newItem.setAttribute("style", `background-image: url("${img}")`);
-    registerCustomImage(newId, img);
-    document.querySelector("#create-image-carousel").append(newItem);
-    input.value = "";
-    resetPreviewer();
+
+    let data;
+    imageConverter(img).then((result) => {
+      data = result;
+
+      newItem.setAttribute("style", `background-image: url("${data}")`);
+      registerCustomImage(newId, data);
+      document.querySelector("#create-image-carousel").append(newItem);
+      input.value = "";
+      resetPreviewer();
+    });
   }
 };
 
